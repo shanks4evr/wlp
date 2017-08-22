@@ -1,0 +1,28 @@
+<table class="table table-striped table-bordered">
+	<thead>
+		<tr>
+			<th>Author</th>
+			<th>Title</th>
+			<th>IMTS</th>
+			<th>Primary Community</th>
+			<th>Total Click</th>
+			<th>Total Opens</th>
+			<th>Total OCR</th>
+			<th>Total CCR</th>
+			<th>Total Emails sent</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="i in userData">
+			<td>{{i.author}}</td>
+			<td>{{i.title}}</td>
+			<td>{{i.imts}}</td>
+			<td>{{i.primary_community}}</td>
+			<td>{{i.total_click}}</td>
+			<td>{{i.total_opens}}</td>
+			<td>{{i.total_ocr}}</td>
+			<td>{{i.total_ccr}}</td>
+			<td>{{i.total_emails_sent}}</td>
+		</tr>
+	</tbody>
+</table>
