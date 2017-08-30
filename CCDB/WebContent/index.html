@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CCDB</title>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/tether.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/angular.min.js"></script>
+	<script src="js/angular-route.min.js"></script>
+	<script src="js/ui-grid.min.js"></script>
+	<script src="demo.js"></script>
+	<link rel="stylesheet" type="text/css" href="style/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="style/ui-grid.min.css">
+	<link rel="stylesheet" type="text/css" href="style/ui-grid.eot">
+	<link rel="stylesheet" type="text/css" href="style/ui-grid.svg">
+	<link rel="stylesheet" type="text/css" href="style/ui-grid.ttf">
+	<link rel="stylesheet" type="text/css" href="style/ui-grid.woff">
+	<link rel="stylesheet" type="text/css" href="ccdb.css">
+</head>
+<body ng-app="ccdbApp">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+	    <div class="container-fluid">
+	      <div class="navbar-header" style="margin-top:5px;margin-right:5px">
+	        <img src="images/ibm_logo.png"/>
+	      </div>
+	      <ul class="nav navbar-nav">
+        	<h3 class="navbar-text">CCDB Application</h3>
+      	  </ul>
+	      <ul class="nav navbar-nav navbar-right">
+	        <li><div class="navbar-text">Logout</div></li>
+	      </ul>
+	    </div>
+	</nav>
+	<div class="yield">
+		<ul class="list-inline">
+			<li class="list-inline-item">
+			  <select class="form-control" id="select_excel_option">
+			  	<option>Download visible records</option>
+			    <option>Download all records</option>
+			  </select>
+		  	</li>
+		  	<li class="list-inline-item">
+				<a href="rest/get"><button type="button" class="btn btn-primary">Download</button></a>
+			</li>
+		</ul>
+		<br/>
+		<ng-view></ng-view>
+	</div>
+	<nav class="navbar navbar-inverse navbar-fixed-bottom">
+  		<div class="container-fluid">
+    		
+  		</div>
+	</nav>
+</body>
+</html>
